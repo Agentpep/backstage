@@ -1,0 +1,49 @@
+$bg-color: #fff;
+$font-color:#333;
+$primary-color:#e07d6b;
+$gradient-first:rgba(224,125,107,0.8);
+$gradient-second:rgba(0,0,0,0.1);
+
+body {
+    background:$bg-color;
+    color:$font-color;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// .navbar{
+//     border-bottom: $primary-color 3px solid;
+//     opacity: 0.9;
+// }
+
+#home-section{
+    background: url('../img/header.jpg') no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height:600px;
+    border-bottom: $primary-color 3px solid;
+
+    .gradient-overlay{
+        background: linear-gradient($gradient-first, $gradient-second);
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        min-height: 600px;
+    }
+
+    .home-inner{
+        padding-top: 200px;
+    }
+
+}
+
+
+section{
+    h2 {
+        letter-spacing: 5px;
+    }
+}
+
+footer {
+    background-color: #d3d3d3
+}
